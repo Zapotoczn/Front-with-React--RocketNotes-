@@ -14,7 +14,7 @@ export const Container = styled.div`
     "menu content"
     "newnote content";
 
-    background-Color: ${({theme}) => theme.COLORS.BACKGROUND_900}; 
+    background-Color: ${({theme}) => theme.COLORS.BACKGROUND_800}; 
 `;
 
 export const Brand = styled.div`
@@ -50,11 +50,14 @@ export const Menu = styled.ul`
 `;
 
 export const Search = styled.div`
-
+    grid-area: search;
+    padding: 44px 64px 0;
 `;
 
 export const Content = styled.div`
-
+    grid-area: content;
+    padding: 0px 64px;
+    overflow-y: auto; 
 `;
 
 export const NewNote = styled.button`

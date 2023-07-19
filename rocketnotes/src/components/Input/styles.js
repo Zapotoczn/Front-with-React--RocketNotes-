@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%:
     display: flex;
+    flex-direction: row;
     align-items: center;
+    
 
     padding: 2px;
 
@@ -15,9 +17,9 @@ export const Container = styled.div`
 
     > input {
         height: 56x;
-        width: 90%;
-
+        width: 80%;  
         padding: 12px;
+        margin-left: 20px;
 
         background: transparent;
         color:  ${({ theme })  => theme.COLORS.WHITE};
@@ -29,6 +31,6 @@ export const Container = styled.div`
     }
 
     > svg {
-            margin-left: 16px;
+            margin-left: 10px
         }
 `;

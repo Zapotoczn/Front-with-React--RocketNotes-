@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom';
 
 export const Container = styled.header`
  grid-area: header;
@@ -19,7 +20,7 @@ export const Container = styled.header`
 
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
 display: flex;
 align-items: center;
 
@@ -34,7 +35,7 @@ align-items: center;
         flex-direction: column;
         margin-left: 16px;
         line-height: 24px;
-
+        color: ${({theme}) => theme.COLORS.WHITE};
         span {
             font-size: 14px;
             color: ${({theme}) => theme.COLORS.GRAY_100};
